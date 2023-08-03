@@ -1,0 +1,1158 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /api/v1/loaderlist/:
+    get:
+      operationId: listLoaders
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createLoader
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Loader'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+  /api/v1/loaderdetail/{id}/:
+    get:
+      operationId: retrieveLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Loader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Loader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/loaderupdate/{id}/:
+    get:
+      operationId: retrieveLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Loader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Loader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Loader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+  /api/v1/loaderdelete/{id}/:
+    get:
+      operationId: retrieveLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loader'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/techservicelist/:
+    get:
+      operationId: listTechServices
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createTechService
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TechService'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+  /api/v1/techservicedetail/{id}/:
+    get:
+      operationId: retrieveTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TechService'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TechService'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/techserviceupdate/{id}/:
+    get:
+      operationId: retrieveTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TechService'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TechService'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TechService'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+  /api/v1/techservicedelete/{id}/:
+    get:
+      operationId: retrieveTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TechService'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyTechService
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tech service.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/claimslist/:
+    get:
+      operationId: listClaims
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createClaims
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Claims'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+  /api/v1/claimsdetail/{id}/:
+    get:
+      operationId: retrieveClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Claims'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Claims'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/claimsupdate/{id}/:
+    get:
+      operationId: retrieveClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Claims'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Claims'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Claims'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+  /api/v1/claimsdelete/{id}/:
+    get:
+      operationId: retrieveClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Claims'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyClaims
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this claims.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/modelloaderlist/:
+    get:
+      operationId: listModelLoaders
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createModelLoader
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+  /api/v1/modelloaderdetail/{id}/:
+    get:
+      operationId: retrieveModelLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this model loader.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateModelLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this model loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateModelLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this model loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyModelLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this model loader.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/modelloaderupdate/{id}/:
+    get:
+      operationId: retrieveLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this loader.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ModelLoader'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+  /api/v1/modelloaderdelete/{id}/:
+    get:
+      operationId: retrieveModelLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this model loader.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelLoader'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyModelLoader
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this model loader.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+components:
+  schemas:
+    Loader:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        serialNumber:
+          type: string
+          maxLength: 64
+        serialNumberEngine:
+          type: string
+          maxLength: 64
+        serialNumberTransmission:
+          type: string
+          maxLength: 64
+        serialNumberLeadingAxle:
+          type: string
+          maxLength: 64
+        serialNumberSteerAxle:
+          type: string
+          maxLength: 64
+        supplyContractNumDate:
+          type: string
+          maxLength: 64
+        dateOfShippingFactory:
+          type: string
+          format: date
+        recipient:
+          type: string
+          maxLength: 64
+        deliveryAddress:
+          type: string
+          maxLength: 128
+        equipment:
+          type: string
+          maxLength: 64
+        modelOfLoader:
+          type: integer
+        modelOfEngine:
+          type: integer
+        modelOfTransmission:
+          type: integer
+        modelOfLeadingAxle:
+          type: integer
+        modelOfSteerAxle:
+          type: integer
+        client:
+          type: integer
+        serviceCompanyLoader:
+          type: integer
+      required:
+      - serialNumber
+      - serialNumberEngine
+      - serialNumberTransmission
+      - serialNumberLeadingAxle
+      - serialNumberSteerAxle
+      - supplyContractNumDate
+      - dateOfShippingFactory
+      - recipient
+      - deliveryAddress
+      - equipment
+      - modelOfLoader
+      - modelOfEngine
+      - modelOfTransmission
+      - modelOfLeadingAxle
+      - modelOfSteerAxle
+      - client
+      - serviceCompanyLoader
+    TechService:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        typeTechService:
+          type: string
+          maxLength: 128
+        dateTechService:
+          type: string
+          format: date
+        operatingTimeTech:
+          type: number
+        numberWorkOrder:
+          type: string
+          maxLength: 64
+        dateWorkOrder:
+          type: string
+          format: date
+        loaderOnTechService:
+          type: integer
+        techServiceCompany:
+          type: integer
+      required:
+      - typeTechService
+      - dateTechService
+      - operatingTimeTech
+      - numberWorkOrder
+      - dateWorkOrder
+      - loaderOnTechService
+      - techServiceCompany
+    Claims:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        dateFailure:
+          type: string
+          format: date
+        operatingTimeClaim:
+          type: number
+        unitFailure:
+          type: string
+          maxLength: 128
+        detailsFailure:
+          type: string
+          maxLength: 264
+        methodRepair:
+          type: string
+          maxLength: 128
+        spareParts:
+          type: string
+          maxLength: 128
+        dateRepair:
+          type: string
+          format: date
+        loaderOnClaim:
+          type: integer
+        repairServiceCompany:
+          type: integer
+      required:
+      - dateFailure
+      - operatingTimeClaim
+      - unitFailure
+      - detailsFailure
+      - methodRepair
+      - spareParts
+      - dateRepair
+      - loaderOnClaim
+      - repairServiceCompany
+    ModelLoader:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        nameModelLoader:
+          type: string
+          maxLength: 128
+      required:
+      - nameModelLoader
